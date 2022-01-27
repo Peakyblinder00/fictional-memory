@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(58, 158, 108);
+           
+        }
+        .main_screen{
+            width: 600px;
+            height: 350px;
+            background-color: white;
+            margin-top: 100px;
+            box-shadow: 0px 0px 15px rgb(37, 37, 37);
+            display: flex;
+            flex-direction: column;
+
+        }
+        .choose{
+            display: flex;
+            list-style-type: none;
+            border: 1px solid rgba(128, 128, 128, 0.548);
+            height: 47px;
+            align-items: center;
+        }
+        .sign{
+            font-size: 22px;
+            font-family: cursive;
+            font-weight: 100;
+            padding-bottom: 6px;
+            padding-right: 5px;
+            color: rgb(165, 165, 165);
+        }
+        .back{
+            font-size: 13px;
+            text-transform: uppercase;
+            color: rgb(165, 165, 165);
+            font-family: sans-serif;
+        }
+        .heart{
+           color: rgb(165, 165, 165);
+           margin-left: 370px;
+        }
+        .flower_icon{
+            
+            padding-left: 20px;
+            width: 150px;
+            padding-top: 0px;
+          
+        }
+        .ul_border{
+            list-style-type: none;
+            border: 1px solid rgba(128, 128, 128, 0.548);
+            width: 250px;
+            height: 301px;
+
+        }
+        .description{
+            border: 1px solid rgba(128, 128, 128, 0.548);
+            width: 330px;
+            height: 301px;
+            list-style-type: none;
+        }
+        .back:hover{
+            color: rgb(63, 63, 63);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .heart:hover{
+            background-color: white;
+            color: red;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .second_screen{
+            width: 600px;
+            height: 47px;
+            background-color: transparent;
+        }
+        .third_screen{
+            height: calc( 350px - 47px );
+            width: 600px;
+            background-color: transparent;
+            display: flex;
+            
+        }
+        .classic{
+            font-size: 18px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            color: rgb(24, 24, 24);
+            padding-top: 30px;
+        }
+        .popular{
+            font-size: 12px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            color: rgb(77, 77, 77);
+        }
+        .cost{
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(77, 77, 77);
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .floor_plant{
+            font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(83, 83, 83);
+            font-weight: 500;
+        }
+        .button{
+            
+            padding-top:  40px;
+        }
+        .btn{
+            width: 120px;
+            margin: 0px 6px;
+            height: 30px;
+            font-weight: 600;
+            font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: transparent;
+            border: 1px solid rgba(94, 94, 94, 0.829);
+            color: rgba(73, 73, 73, 0.829);
+        }
+        .btn:hover{
+            background-color: rgb(0, 128, 90);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main_screen">
+            <div class="second_screen">
+                <ul class="choose">
+                    <li class="sign"><</li>
+                    <li class="back"> back to all plants</li>
+                    <li class="heart"><i class="far fa-heart"></i></li>
+                    </ul>
+            </div>
+            <div class="third_screen">
+                <ul class="ul_border">
+                    <li class="border"><img class="flower_icon" src="./pngwing.com (6).png" alt=""></li>
+                </ul>
+                <ul class="description">
+                    <li class="classic">classic peace lily</li>
+                    <li class="popular">popular house plant</li>
+                    <li class="cost">$<b style="font-size: 18px; font-weight: 500;">1</b>8</li>
+                    <li class="floor_plant">CLASSIC PEACE LILY is a spathiphyllum floor plant</li>
+                    <li class="floor_plant">arranged in a bamboo planter with a blue & red </li>
+                    <li class="floor_plant">ribbom and butterfly pick.</li>
+                    <li class="button"><button class="btn">ADD TO CART</button> <button class="btn">WISHLIST</button></li>
+
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
